@@ -74,11 +74,10 @@ def run_VB(S_flips, flip_intervals, flip_neuron, gamma, J_mu_prior, lmbda=1.,
                                              lmbda)
         F = free_energy(S_flips, flip_intervals, flip_neuron, H_mu, H2_mu,
                         J_mu, J_Sigma, gamma, J_mu_prior, lmbda, lmbda_theta)
-        converged = (F_old - F) / N / T < -1
+        converged = (F_old - F) / N / T < 1e-4
         F_list.append(F)
         iteration += 1
-        print(F)
-        print('Iteration %d: Free Energy = %f' % (iteration, (F_old - F) / N / T))
+        print('Iteration %d: Free Energy = %f' % (iteration, F))
 
     F_list = numpy.array(F_list)
     return J_mu, J_Sigma, F_list
