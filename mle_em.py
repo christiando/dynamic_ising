@@ -1,3 +1,10 @@
+'''
+This file contains the code for sampling data for the Ising model in
+continuous time and the maximum likelihood estimator.
+
+Author: Christian Donner
+'''
+
 import numpy
 
 C = None

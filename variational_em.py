@@ -1,3 +1,8 @@
+'''
+This file contains the code for variational Bayes algorithm.
+
+Author: Christian Donner
+'''
 import numpy
 from scipy.special import kv
 

@@ -1,3 +1,9 @@
+'''
+This file contains the code for penalized maximum likelihood estimator.
+
+Author: Christian Donner
+'''
+
 import numpy
 
 C = None

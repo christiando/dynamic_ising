@@ -1,3 +1,7 @@
+'''
+Author: Christian Donner
+'''
+
 import numpy
 from matplotlib import pyplot
 from mle_em import sample_continuous_time_model_Gillespie, prepare_data
